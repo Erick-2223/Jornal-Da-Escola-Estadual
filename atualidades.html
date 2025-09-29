@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-png"/>
+    <title>Atualidades - Jornal da Escola Estadual</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="imagens/logo.png" alt="Capa do Jornal" class="logo-img" />
+                <span class="logo-text">Jornal da Escola Estadual</span>
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="esportes.html">Esportes</a></li>
+                    <li><a href="musicas.html">Músicas</a></li>
+                    <li><a href="livros.html">Livros</a></li>
+                    <li><a href="moda.html">Moda</a></li>
+                    <li><a href="atualidades.html">Atualidades</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="introducao-atualidades" class="introducao">
+            <h1><i class="bi bi-newspaper"></i> Fique por Dentro: Notícias e Análises</h1>
+            <p>Conheça os fatos mais relevantes que moldam nosso mundo e nossa comunidade escolar.</p>
+            <ul class="lista-temas-intro">
+                <li><i class="bi bi-lightbulb"></i> Informação e Conhecimento</li>
+                <li><i class="bi bi-globe-americas"></i> Eventos Nacionais e Locais</li>
+                <li><i class="bi bi-chat-dots"></i> Análises e Perspectivas</li>
+            </ul>
+        </section>
+
+        <section id="artigos-atualidades" class="news-cards-container">
+            <h2 style="color: #0056b3;"><i class="bi bi-book"></i> Destaques da Educação</h2>
+
+            <section id="charge-critica" class="secao news-card charge-section">
+                <div class="card-header social-theme">
+                    <h2><i class="bi bi-megaphone-fill"></i> Charge: As Prioridades da Escola</h2>
+                    <span class="card-tag">#CríticaSocial #Infraestrutura #Opinião</span>
+                </div>
+
+                <div class="card-content charge-layout">
+
+                    <div class="charge-text-content">
+                        <p>A imagem mostra uma crítica ao jeito que a escola lida com os problemas. Enquanto os
+                            responsáveis se preocupam em **cobrar uniforme dos alunos**, a escola continua **sem um
+                            prédio próprio**.</p>
+
+                        <div class="card-article-details">
+                            <p>Os estudantes precisam **dividir espaço com o município** e não têm nenhuma previsão de
+                                quando vão ter uma estrutura só deles.</p>
+                            <p>Ou seja, em vez de resolver o que realmente importa — dar um lugar adequado para estudar
+                                — a escola **não se fala sobre esse assunto**.</p>
+                        </div>
+                    </div>
+
+                    <div class="charge-media-content">
+                        <img src="imagens/charge.jpg"
+                            alt="Charge de Maria Clara criticando a falta de prioridade da escola."
+                            class="charge-image">
+                        <p class="autor" style="text-align: center; margin-top: 10px;">Charge criada por
+                            <Strong>Maria</Strong></p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <hr>
+            <section id="artigo-saeb" class="secao news-card">
+                <div class="card-header education-theme">
+                    <h2><i class="bi bi-file-earmark-bar-graph"></i> SAEB: O Termômetro da Educação Brasileira</h2>
+                    <span class="card-tag">#Educação #Avaliação #INEP #IDEB</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-text">
+                        <p class="summary">O Sistema de Avaliação da Educação Básica (SAEB) é uma das principais
+                            ferramentas para medir a qualidade da educação no Brasil. Aplicado pelo Instituto Nacional
+                            de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP), o exame reúne informações sobre
+                            o desempenho dos estudantes e o contexto em que eles aprendem.</p>
+
+                        <div class="card-article-details">
+                            <p>A prova acontece a cada dois anos e é aplicada para alunos do 2º, 5º e 9º ano do Ensino
+                                Fundamental, além do 3º ano do Ensino Médio. O foco está, principalmente, em Língua
+                                Portuguesa e Matemática, mas o SAEB também coleta dados sobre o ambiente escolar,
+                                infraestrutura e formação dos professores.</p>
+                            <p>Os resultados do SAEB são fundamentais para a construção do Índice de Desenvolvimento da
+                                Educação Básica (IDEB), indicador que mostra a evolução da qualidade do ensino em todo o
+                                país. É com base nessas informações que gestores, professores e autoridades podem pensar
+                                em estratégias para melhorar a aprendizagem dos alunos.</p>
+                            <p>Além de avaliar, a prova também ajuda as escolas a identificar seus pontos fortes e os
+                                aspectos que precisam ser reforçados, funcionando como um termômetro da educação
+                                brasileira.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-media full-width-media">
+                        <img src="imagens/saeb.jpg" alt="Gráfico de avaliação educacional.">
+
+                    </div>
+                </div>
+                <p class="autor">Por <Strong>Gabrielli e Thayna</Strong></p>
+            </section>
+
+            <section id="artigo-estudo-play" class="secao news-card">
+                <div class="card-header education-theme">
+                    <h2><i class="bi bi-controller"></i> Estudo Play: Projeto do Governo para Fortalecer a Educação</h2>
+                    <span class="card-tag">#EducaçãoMG #PlataformaDigital #ENEM #SAEB</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-text">
+                        <p class="summary">O Estudo Play é uma plataforma digital criada como projeto do governo de
+                            Minas Gerais, com o objetivo de apoiar os estudantes da rede pública na preparação para
+                            avaliações externas, como o SAEB e o ENEM.</p>
+
+                        <div class="card-article-details">
+                            <p>A ferramenta reúne videoaulas, exercícios, simulados e conteúdos gamificados, que ajudam
+                                os alunos a estudar de forma mais leve e interativa. Além de revisar os conteúdos de
+                                Língua Portuguesa e Matemática, disciplinas centrais para o desempenho nas provas, a
+                                plataforma também incentiva a autonomia dos estudantes, permitindo que cada um acompanhe
+                                seu progresso.</p>
+                            <p>Outro ponto importante é que o Estudo Play também serve de apoio para os professores, que
+                                conseguem acompanhar o desempenho das turmas e identificar os pontos que precisam de
+                                mais reforço.</p>
+                            <p>Com esse projeto, o governo busca reduzir desigualdades no acesso à educação de
+                                qualidade, ampliando as oportunidades de aprendizagem para todos os estudantes da rede
+                                estadual.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-media full-width-media">
+                        <img src="imagens/enemmg3.jpg" alt="Jovem estudando em tablet.">
+
+                    </div>
+                </div>
+                <p class="autor">Por <Strong>Gabrielli e Thayna</Strong></p>
+            </section>
+
+            <section id="artigo-obmep" class="secao news-card">
+                <div class="card-header education-theme">
+                    <h2><i class="bi bi-calculator"></i> OBMEP: Desvendando Talentos na Matemática</h2>
+                    <span class="card-tag">#Matemática #Olimpíada #IMPA #Talentos</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-text">
+                        <p class="summary">A Olimpíada Brasileira de Matemática das Escolas Públicas (OBMEP) é um dos
+                            maiores eventos educacionais do país. Criada em 2005 pelo Instituto de Matemática Pura e
+                            Aplicada (IMPA), em parceria com o Ministério da Educação e o Ministério da Ciência,
+                            Tecnologia e Inovações, a OBMEP tem como objetivo estimular o estudo da matemática e
+                            descobrir novos talentos entre os estudantes brasileiros.</p>
+
+                        <div class="card-article-details">
+                            <p>A competição é dividida em níveis de acordo com a série do aluno:</p>
+                            <ul>
+                                <li>Nível 1: 6º e 7º anos do Ensino Fundamental</li>
+                                <li>Nível 2: 8º e 9º anos do Ensino Fundamental</li>
+                                <li>Nível 3: Ensino Médio</li>
+                            </ul>
+                            <p>Milhões de alunos participam todos os anos. A prova é composta por duas fases: uma
+                                primeira etapa com questões objetivas e uma segunda com problemas dissertativos, que
+                                exigem criatividade e raciocínio lógico.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-media full-width-media">
+                        <img src="imagens/obmep3 (1).jpg" alt="Medalha da OBMEP.">
+
+                    </div>
+                </div>
+                <p class="autor">Por <Strong>Gabrielli e Thayna</Strong></p>
+            </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Sobre</h4>
+                <p>Jornal da Escola Estadual é um projeto da turma **3º 01**, com foco em educação, cultura e
+                    atualidades.</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contato</h4>
+                <p>Email: <a href="mailto:erickjuniorferreirasouza25@gmail.com">erickjuniorferreirasouza25@gmail.com</a>
+                </p>
+                <p>Telefone: (38) 99859-4129</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Siga-nos</h4>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ericksoul_" target="_blank" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://github.com/Erick-2223" target="_blank" aria-label="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Jornal da Escola Estadual. Desenvolvido por **Erick Junio**.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const nav = document.getElementById("nav");
+
+        menuToggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+            const icon = menuToggle.querySelector("i");
+            icon.classList.toggle("bi-list");
+            icon.classList.toggle("bi-x");
+        });
+    </script>
+</body>
+
+</html>

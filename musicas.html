@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-png"/>
+  <title>Músicas - Jornal da Escola Estadual</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="imagens/logo.png" alt="Capa do Jornal" class="logo-img" />
+        <span class="logo-text">Jornal da Escola Estadual</span>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="bi bi-list"></i>
+      </div>
+
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="esportes.html">Esportes</a></li>
+          <li><a href="musicas.html">Músicas</a></li>
+          <li><a href="atualidades.html">Atualidades</a></li>
+          <li><a href="livros.html">Livros</a></li>
+          <li><a href="moda.html">Moda</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <section id="introducao-musica" class="introducao">
+      <h1><i class="bi bi-music-note-beamed"></i> O Ritmo da Escola</h1>
+      <p>Do Pop Global ao Funk Nacional, confira as batidas que estão dominando as playlists e as notícias sobre a
+        cena musical!</p>
+      <ul class="lista-temas-intro">
+        <li><i class="bi bi-star"></i> Diversos Estilos</li>
+        <li><i class="bi bi-flag"></i> Músicas em geral</li>
+        <li><i class="bi bi-speaker"></i> Notícias da Pista</li>
+      </ul>
+    </section>
+
+    <section id="filtros-musica" class="secao filtros-container">
+      <h2>O que você procura?</h2>
+      <div class="botoes-filtros">
+        <button class="btn-filtro active" data-tab="recomendacoes"><i class="bi bi-headphones"></i>
+          Recomendações</button>
+        <button class="btn-filtro" data-tab="estilos"><i class="bi bi-cassette"></i> Estilos Variados</button>
+        <button class="btn-filtro" data-tab="grupos"><i class="bi bi-people-fill"></i> Grupos Musicais</button>
+        <button class="btn-filtro" data-tab="noticias"><i class="bi bi-broadcast"></i> Notícias da Pista</button>
+      </div>
+    </section>
+
+    <div class="tabs-content-wrapper">
+
+      <div id="recomendacoes" class="news-cards-container content-section active">
+
+        <section id="otonablue" class="secao news-card">
+          <div class="card-header pop-theme">
+            <h2><i class="bi bi-mask"></i> J-Pop/Otonablue - ATARASHII GAKKO!</h2>
+            <span class="card-tag">#JPop #Trend #Jovem</span>
+          </div>
+          <div class="card-content">
+            <p class="summary">Essa música do quarteto japonês **ATARASHII GAKKO!** explodiu nas redes sociais! A letra
+              fala sobre a tensão de parecer madura, mas ainda ser inexperiente no amor.</p>
+
+            <div class="card-article-details">
+              <p>A batida é nostálgica, inspirada no **City Pop** japonês dos anos 80, e a coreografia é viciante,
+                misturando movimentos de dança retrô com a energia rebelde e uniforme escolar do grupo. Perfeita para
+                quem busca um pop divertido e diferente!</p>
+
+              <div class="audio-player-container">
+                <audio controls>
+                  <source src="audios/otonablue.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <p class="autor">Por <strong>Kate</strong></p>
+          </div>
+        </section>
+
+        <section id="gimme-chocolate" class="secao news-card">
+          <div class="card-header mauricio-theme">
+            <h2><i class="bi bi-capslock-fill"></i> J-Metal/Gimme Chocolate!! - BABYMETAL</h2>
+            <span class="card-tag">#JMetal #KawaiiMetal #Caos</span>
+          </div>
+          <div class="card-content">
+            <p class="summary">Uma das músicas que levou o **BABYMETAL** ao estrelato global. O conceito é o **"Kawaii
+              Metal"**, misturando vocais fofos de J-Pop com riffs de guitarra de metal pesado e bateria extremamente
+              rápida.</p>
+            <div class="card-article-details">
+              <p>A música, apesar do título leve, é uma explosão de energia caótica e altamente técnica. Fala sobre o
+                desejo irresistível por chocolate de forma hiperbólica. É uma experiência sonora única!</p>
+
+              <div class="audio-player-container">
+                <audio controls>
+                  <source src="audios/gimme.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <p class="autor">Por <strong>Kate</strong></p>
+          </div>
+        </section>
+
+        <section id="onedari-daisakusen" class="secao news-card">
+          <div class="card-header mauricio-theme">
+            <h2><i class="bi bi-wallet2"></i> J-Metal/Onedari Daisakusen - BABYMETAL</h2>
+            <span class="card-tag">#JMetal #Engraçada #Alternativo</span>
+          </div>
+          <div class="card-content">
+            <p class="summary">Traduzida como "Estratégia para Implorar", esta faixa mantém a mistura de metal com
+              J-Pop, mas com um toque de humor mais direto, falando sobre implorar por mesada e por coisas caras aos
+              pais.</p>
+            <div class="card-article-details">
+              <p>É uma música divertida e com um ritmo mais voltado para o rap metal em alguns trechos. Mostra a
+                diversidade do estilo "Kawaii Metal" e, apesar da letra juvenil, o instrumental é pesado e de alta
+                qualidade.</p>
+
+              <div class="audio-player-container">
+                <audio controls>
+                  <source src="audios/onedari.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <p class="autor">Por <strong>Kate</strong></p>
+          </div>
+        </section>
+
+        <section id="weezer" class="secao news-card">
+          <div class="card-header rock-theme">
+            <h2><i class="bi bi-guitar-fill"></i> Rock: Recomendo a Banda Weezer</h2>
+            <span class="card-tag">#Rock #Alternativo</span>
+          </div>
+          <div class="card-content">
+            <p class="summary">Para quem gosta de rock alternativo com um toque de humor nerd e melodias viciantes, a
+              banda Weezer é a pedida certa!</p>
+
+            <div class="card-article-details">
+              <h3>Música Favorita: "Buddy Holly"</h3>
+              <p>A música que melhor resume o som e a identidade visual única do Weezer. A batida é contagiante.</p>
+              <div class="audio-player-container">
+                <audio controls>
+                  <source src="audios/buddy_holly.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <p class="autor">Por <strong>Erick Junio</strong></p>
+          </div>
+        </section>
+
+        <section id="summerboy" class="secao news-card">
+          <div class="card-header mauricio-theme">
+            <h2><i class="bi bi-star-fill"></i> Recomendação: Lady Gaga - "Summerboy"</h2>
+            <span class="card-tag">#Pop #Maurício</span>
+          </div>
+          <div class="card-content">
+            <p class="summary">Um pop da Lady Gaga que fala sobre um relacionamento casual de verão, com uma vibe
+              despreocupada e divertida, sabendo que o romance é temporário.</p>
+            <div class="audio-player-container">
+              <audio controls>
+                <source src="audios/summerboy.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <p class="autor">Por <strong>Mauricio</strong></p>
+          </div>
+        </section>
+
+        <section id="bangbang" class="secao news-card">
+          <div class="card-header mauricio-theme">
+            <h2><i class="bi bi-lightning-fill"></i> Recomendação: Sohodolls - "Bang Bang Bang Bang"</h2>
+            <span class="card-tag">#Indie #Maurício</span>
+          </div>
+          <div class="card-content">
+            <p class="summary">Faixa energética e cativante sobre rebeldia e liberdade na vida noturna. A repetição do
+              refrão cria um efeito sonoro impactante e dançante.</p>
+            <div class="audio-player-container">
+              <audio controls>
+                <source src="audios/bang_bang_bang_bang.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <p class="autor">Por <strong>Mauricio</strong></p>
+          </div>
+        </section>
+
+        <section id="toxicity" class="secao news-card">
+          <div class="card-header mauricio-theme">
+            <h2><i class="bi bi-fire"></i> Recomendação: System of a Down - "Toxicity"</h2>
+            <span class="card-tag">#Metal #Maurício</span>
+          </div>
+          <div class="card-content">
+            <p class="summary">Uma das músicas mais icônicas do System of a Down. Com ritmo frenético, aborda crítica
+              social e a busca por identidade.</p>
+            <div class="audio-player-container">
+              <audio controls>
+                <source src="audios/toxicity.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+              </audio>
+            </div>
+            <p class="autor">Por <strong>Mauricio</strong></p>
+          </div>
+        </section>
+
+      </div>
+
+      <div id="estilos" class="news-cards-container content-section">
+
+        <section id="pop" class="secao news-card">
+          <div class="card-header pop-theme">
+            <h2><i class="bi bi-heart-fill"></i> Pop para Todas as Horas</h2>
+            <span class="card-tag">#Pop #Recomendação</span>
+          </div>
+          <div class="card-content">
+            <p class="summary">O pop é um estilo musical que está sempre mudando, se reinventando e acompanhando o que
+              está em alta. Por isso, ele nunca fica velho.</p>
+
+            <div class="card-article-details">
+              <p>Tem sempre uma batida envolvente, letras específicas e, claro, artistas incríveis que fazem sucesso no
+                mundo todo.</p>
+
+              <h3>Por que Recomendo?</h3>
+              <p>Eu gosto do pop porque é superacessível: está nas rádios, nas redes sociais, nos aplicativos de música
+                e até nas trilhas sonoras de filmes e séries. É ótimo de cantar junto e perfeito para qualquer momento —
+                seja em festas, no caminho da escola ou até para estudar (dependendo da vibe).</p>
+
+              <p>Recomendo o pop porque ele tem músicas para todos os gostos e momentos. Se você está triste, tem uma
+                música pop pra te animar. Se está feliz, tem outra que te faz dançar ou até com crítica social.</p>
+            </div>
+            <p class="autor">Por <strong>Ana Julia</strong></p>
+          </div>
+        </section>
+
+        <section id="nacional" class="secao news-card">
+          <div class="card-header nacional-theme">
+            <h2><i class="bi bi-flag-fill"></i> O Legado da Música Nacional Brasileira</h2>
+            <span class="card-tag">#Brasil #Cultura #MPB</span>
+          </div>
+          <div class="card-content">
+            <p class="summary">A música brasileira é um reflexo da mistura de povos e tradições que formaram o país,
+              dando origem a gêneros que são símbolos nacionais como o samba, forró, bossa nova e MPB.</p>
+
+            <div class="card-article-details">
+              <p>Da herança indígena, africana e europeia nasceram gêneros que se tornaram símbolos nacionais, como o
+                samba, forró, bossa nova, MPB, sertanejo, funk e rap.</p>
+
+              <h3>Grandes Nomes e o Cenário Atual</h3>
+              <p>Ao longo da história, nomes como Tom Jobim, Elis Regina, Luiz Gonzaga, Caetano Veloso e, mais
+                recentemente, Anitta, ajudaram a projetar a música nacional para além das fronteiras, consolidando-a no
+                cenário mundial. Hoje, com a internet, novos talentos conquistam espaço e ampliam ainda mais o alcance
+                da produção brasileira.</p>
+
+              <p>🎶 **Conclusão:** A música nacional segue como um dos pilares da identidade do Brasil, traduzindo sua
+                diversidade, sua história e sua força cultural.</p>
+            </div>
+            <p class="autor">Por <strong>Larissa</strong></p>
+          </div>
+        </section>
+
+        <section id="historia-rock" class="secao news-card">
+          <div class="card-header rock-theme">
+            <h2><i class="bi bi-boombox-fill"></i> O Nascimento do Rock and Roll</h2>
+            <span class="card-tag">#Rock #História #Blues</span>
+          </div>
+          <div class="card-content">
+            <p class="summary">O Rock and Roll nasceu da mistura de diversos gêneros musicais e se tornou um símbolo de
+              energia, juventude e rebeldia global.</p>
+
+            <div class="card-article-details">
+              <p>A história do estilo musical rock começa nos **Estados Unidos da América**, entre o final da década de
+                1940 e início da década de 1950. Ele surgiu como uma fusão de gêneros musicais ricos, como **blues,
+                country, rhythm and blues (R&B)** e **gospel**.</p>
+
+              <p>Inicialmente chamado de **rock and roll**, o estilo ganhou popularidade rapidamente entre os jovens.
+                Eles se encantaram com o ritmo energético e as letras, que frequentemente falavam sobre liberdade,
+                carros, namoro e a vida adolescente.</p>
+
+              <p>O rock, em sua essência, é um estilo musical que simboliza a quebra de barreiras e a inovação
+                constante.</p>
+            </div>
+            <p class="autor">Por <strong>Kate</strong></p>
+          </div>
+        </section>
+
+      </div>
+
+      <div id="grupos" class="news-cards-container content-section">
+
+        <section id="racionais" class="secao news-card">
+          <div class="card-header funk-theme">
+            <h2><i class="bi bi-mic-fill"></i> Racionais MC's: A Voz da Periferia</h2>
+            <span class="card-tag">#Rap #Nacional #ImpactoSocial</span>
+          </div>
+          <div class="card-content">
+            <p class="summary">Fundado em 1988, o Racionais MC's é um dos grupos de rap mais importantes e influentes do
+              Brasil. Formado por **Mano Brown, Ice Blue, Edi Rock e KL Jay**, o grupo se consolidou como a voz da
+              periferia brasileira.</p>
+
+            <div class="card-article-details">
+              <p>Suas letras são um retrato cru e direto da realidade social das comunidades, abordando temas como
+                racismo, violência, pobreza e a luta por dignidade. O impacto do Racionais vai além da música, sendo um
+                elemento fundamental na formação da consciência social de gerações.</p>
+
+              <h3>Álbuns Essenciais</h3>
+              <p>Álbuns como **'Sobrevivendo no Inferno'** (1997) e **'Nada como um Dia Após o Outro Dia'** (2002) são
+                marcos do rap, com faixas que se tornaram hinos de protesto e reflexão, como "Diário de um Detento" e
+                "Vida Loka". O grupo continua ativo, fazendo shows e mantendo sua relevância histórica e cultural.</p>
+            </div>
+            <p class="autor">Por <strong>Erick Junio</strong></p>
+          </div>
+        </section>
+
+        <section id="nirvana" class="secao news-card">
+          <div class="card-header rock-theme">
+            <h2><i class="bi bi-music-player"></i> Nirvana: O Legado do Grunge</h2>
+            <span class="card-tag">#Grunge #Rock #KurtCobain</span>
+          </div>
+          <div class="card-content">
+            <p class="summary">Formada em 1987 por **Kurt Cobain** e **Krist Novoselic**, o Nirvana foi o pilar do
+              movimento grunge de Seattle, definindo o som do início dos anos 90.</p>
+
+            <div class="card-article-details">
+              <p>Vários bateristas passaram pela banda, sendo **Dave Grohl** o que permaneceu por mais tempo (a partir
+                de 1990). O som da banda era marcado por **contrastes dinâmicos**: alternando entre versos calmos e
+                refrões explosivos e pesados.</p>
+
+              <h3>Sucesso e Impacto</h3>
+              <p>Após lançar seu álbum de estreia *Bleach* (1989), a banda assinou com a DGC Records e alcançou sucesso
+                mundial inesperado com **"Smells Like Teen Spirit"**, o primeiro single do icônico álbum *Nevermind*
+                (1991).</p>
+
+              <p>Apesar de ter lançado apenas três álbuns de estúdio em sua breve história (que terminou com a morte de
+                Cobain em 1994), o Nirvana já vendeu mais de **75 milhões de cópias** mundialmente, consolidando-se como
+                uma das bandas mais influentes da história do rock.</p>
+            </div>
+            <p class="autor">Por <strong>Kate</strong></p>
+          </div>
+        </section>
+
+        <section id="linkinpark" class="secao news-card">
+          <div class="card-header mauricio-theme">
+            <h2><i class="bi bi-radioactive"></i> Linkin Park: De Nu Metal ao Retorno</h2>
+            <span class="card-tag">#RockAlternativo #NuMetal #Retorno</span>
+          </div>
+          <div class="card-content">
+            <p class="summary">O Linkin Park, formado em 1996, alcançou fama internacional com o álbum *Hybrid Theory*
+              (2000), um dos mais vendidos de todos os tempos.</p>
+
+            <div class="card-article-details">
+              <p>O álbum de estreia foi certificado como **diamante** nos EUA em 2005. Seu segundo álbum, *Meteora*
+                (2003), liderou a parada Billboard 200, solidificando o sucesso da banda no estilo **nu metal/rap
+                metal**.</p>
+
+              <h3>Formação e Novidades</h3>
+              <p>A formação original incluía os vocalistas **Chester Bennington** e **Mike Shinoda**. Após o trágico
+                suicídio de Bennington em 2017, a banda entrou em um hiato. Em **setembro de 2024**, o Linkin Park
+                anunciou seu retorno com a adição da vocalista **Emily Armstrong** e do baterista **Colin Brittain**,
+                mantendo Mike Shinoda, Brad Delson, Dave Farrell e Joe Hahn.</p>
+
+              <p>Em seu terceiro álbum, *Minutes to Midnight*, a banda explorou outros gêneros, mostrando sua capacidade
+                de se reinventar e liderando as paradas com a terceira melhor semana de estreia de um álbum naquele ano.
+              </p>
+            </div>
+            <p class="autor">Por <strong>Kate</strong></p>
+          </div>
+        </section>
+
+        <section id="febre-90s" class="secao news-card">
+          <div class="card-header nacional-theme">
+            <h2><i class="bi bi-headset"></i> Febre 90's: O Boom Bap da Periferia Atual</h2>
+            <span class="card-tag">#RapNacional #BoomBap #HipHop</span>
+          </div>
+          <div class="card-content">
+            <p class="summary">Dupla de rap formada pelo MC **PumaPJL** (Rio de Janeiro) e o produtor **SonoTWS**
+              (Jundiaí-SP). O grupo resgata a sonoridade **boom bap** dos anos 90, mas com letras que refletem a
+              **vivência periférica e as questões atuais** do Brasil.</p>
+
+            <div class="card-article-details">
+              <p>Eles ganharam notoriedade ao combinar **batidas pesadas, samplers e uma atmosfera nostálgica** com
+                temas como desigualdade, identidade e resistência. A **estética visual** do grupo, que inclui o uso de
+                balaclavas e valorização de mídias analógicas (como fitas cassete), reforça o vínculo com a cultura de
+                rua pré-digital do hip hop.</p>
+
+              <h3>Músicas de Destaque</h3>
+              <p>Canções como **“Sementinha do Mal”**, **“No Piscar dos Olhos”** e **“Malandro Demais Vira Bicho”**
+                foram cruciais para o crescimento da dupla. O Febre 90's representa uma ponte autêntica entre o passado
+                e o presente do rap nacional.</p>
+            </div>
+            <p class="autor">Por <strong>Erick Junio</strong></p>
+          </div>
+        </section>
+
+      </div>
+
+      <div id="noticias" class="news-cards-container content-section">
+
+        <section id="gorillaz" class="secao news-card">
+          <div class="card-header rock-theme">
+            <h2><i class="bi bi-fire"></i> Gorillaz 'vai à Índia' em novo álbum 'The Mountain'</h2>
+            <span class="card-tag">#Alternativo #Lançamento #Gorillaz</span>
+          </div>
+          <div class="card-content">
+            <p class="summary">O **Gorillaz** anunciou detalhes de seu próximo álbum de estúdio. **The Mountain**, nono
+              disco do grupo e primeiro por meio de seu próprio novo selo Kong, chega a público em **20 de março de
+              2026**.</p>
+
+            <div class="card-article-details">
+              <p>O disco promete uma sonoridade inspirada na cultura e na música da Índia, um território ainda não
+                explorado pela banda virtual.</p>
+              <p>O artigo convida os leitores a **ouvir o single** de lançamento para ter um gostinho do que está por
+                vir.</p>
+            </div>
+            <p class="autor">Por <strong>Erick Junio</strong></p>
+          </div>
+        </section>
+
+        <section id="dennis" class="secao news-card">
+          <div class="card-header funk-theme">
+            <h2><i class="bi bi-vinyl-fill"></i> DJ Dennis: Planos e Expansão para 2025</h2>
+            <span class="card-tag">#Funk #Lançamento #Mundial</span>
+          </div>
+          <div class="card-content">
+            <p class="summary">O DJ e produtor **Dennis**, um dos maiores nomes do funk brasileiro, está preparando um
+              pacote de novidades para 2025.</p>
+
+            <div class="card-article-details">
+              <p>Reconhecido por sucessos que marcaram o gênero nas pistas e rádios, o artista quer consolidar ainda
+                mais sua carreira e abrir espaço para o funk no cenário mundial.</p>
+
+              <h3>Novo Álbum e Inovações</h3>
+              <p>Entre os destaques, Dennis trabalha em um novo álbum de funk, que promete **misturar o estilo
+                tradicional das comunidades brasileiras com inovações sonoras e colaborações inéditas**. O projeto tem
+                como objetivo valorizar a essência do ritmo, mas também dialogar com as tendências atuais da música
+                global.</p>
+
+              <h3>Documentário e Plano Global</h3>
+              <p>Além do álbum, o DJ também está produzindo um **documentário especial**, que vai narrar sua trajetória
+                desde os primeiros passos até se tornar referência no mercado musical. A produção deve trazer bastidores
+                de sua carreira, momentos marcantes e depoimentos de artistas que fizeram parte de sua história.</p>
+
+              <p>Outro ponto importante nos planos do artista é a **expansão internacional**. Dennis pretende levar o
+                funk para além das fronteiras brasileiras, criando parcerias com músicos de diferentes gêneros e
+                nacionalidades. A ideia é apresentar ao mundo uma nova visão do funk, capaz de se conectar com públicos
+                diversos sem perder sua identidade.</p>
+
+              <p>Com essa nova fase, Dennis reforça sua posição como um dos principais embaixadores do funk e promete
+                fazer de 2025 um ano de grandes lançamentos e conquistas.</p>
+            </div>
+            <p class="autor">Por <strong>Emilly Kauany</strong></p>
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Sobre</h4>
+        <p>Jornal da Escola Estadual é um projeto da turma **3º 01**, com foco em educação, cultura e atualidades.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contato</h4>
+        <p>Email: <a href="mailto:erickjuniorferreirasouza25@gmail.com">erickjuniorferreirasouza25@gmail.com</a></p>
+        <p>Telefone: (38) 99859-4129</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Siga-nos</h4>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/ericksoul_" target="_blank" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://github.com/Erick-2223" target="_blank" aria-label="GitHub">
+            <i class="bi bi-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Jornal da Escola Estadual. Desenvolvido por **Erick Junio**.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Script do menu (já existente)
+    const menuToggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav");
+
+    menuToggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+      const icon = menuToggle.querySelector("i");
+      icon.classList.toggle("bi-list");
+      icon.classList.toggle("bi-x");
+    });
+
+    // === SCRIPT PARA FUNCIONALIDADE DE ABAS (TABS) ATUALIZADO ===
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabButtons = document.querySelectorAll('.btn-filtro');
+      const contentSections = document.querySelectorAll('.content-section');
+
+      // Função para mostrar o conteúdo da aba selecionada
+      function showTab(tabId) {
+        // Esconde todas as seções de conteúdo
+        contentSections.forEach(section => {
+          section.style.display = 'none';
+        });
+        // Remove a classe 'active' de todos os botões
+        tabButtons.forEach(button => {
+          button.classList.remove('active');
+        });
+
+        // Mostra a seção de conteúdo correta
+        const activeSection = document.getElementById(tabId);
+        if (activeSection) {
+          // Notícias usa largura total (flex/coluna). As outras usam grid (cards lado a lado).
+          if (tabId === 'noticias') {
+            activeSection.style.display = 'flex';
+          } else {
+            activeSection.style.display = 'grid';
+          }
+        }
+      }
+
+      // Adiciona o listener de clique para cada botão
+      tabButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          const tabId = this.getAttribute('data-tab');
+          showTab(tabId);
+          this.classList.add('active'); // Adiciona a classe 'active' ao botão clicado
+        });
+      });
+
+      // Inicializa, mostrando o primeiro tab (Recomendações)
+      showTab('recomendacoes');
+    });
+  </script>
+</body>
+
+</html>
